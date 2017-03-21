@@ -13,8 +13,8 @@ mvpdemo是使用mvp框架（学习TODO-APP），rxjava和retrofit的简单使用
 
 预览：
 
-![img]（https://github.com/androidlli/MyApplication/blob/master/img-folder/md_home.png）
-![img]（https://github.com/androidlli/MyApplication/blob/master/img-folder/md_nav.png）
-![img]（https://github.com/androidlli/MyApplication/blob/master/img-folder/md_item.png）
-![img]（https://github.com/androidlli/MyApplication/blob/master/img-folder/md_camera.png）
-![img]（https://github.com/androidlli/MyApplication/blob/master/img-folder/md_mvp.png）
+![img](https://github.com/androidlli/MyApplication/blob/master/img-folder/md_home.png)
+![img](https://github.com/androidlli/MyApplication/blob/master/img-folder/md_nav.png)
+![img](https://github.com/androidlli/MyApplication/blob/master/img-folder/md_item.png)
+![img](https://github.com/androidlli/MyApplication/blob/master/img-folder/md_camera.png)
+![img](https://github.com/androidlli/MyApplication/blob/master/img-folder/md_mvp.png)
