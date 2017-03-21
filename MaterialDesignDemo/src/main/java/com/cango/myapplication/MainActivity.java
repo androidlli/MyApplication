@@ -5,6 +5,7 @@ import android.support.design.widget.NavigationView;
 import android.support.v4.view.GravityCompat;
 import android.support.v4.widget.DrawerLayout;
 import android.support.v7.app.ActionBar;
+import android.support.v7.app.ActionBarDrawerToggle;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.support.v7.widget.GridLayoutManager;
@@ -47,10 +48,18 @@ public class MainActivity extends AppCompatActivity {
         mRecyclerView= (RecyclerView) findViewById(R.id.recyclerview);
         setSupportActionBar(mToolbar);
         ActionBar supportActionBar = getSupportActionBar();
-        if (supportActionBar!=null){
-            supportActionBar.setDisplayHomeAsUpEnabled(true);
-            supportActionBar.setHomeAsUpIndicator(R.drawable.menu);
-        }
+//        if (supportActionBar!=null){
+//            supportActionBar.setDisplayHomeAsUpEnabled(true);
+//            supportActionBar.setHomeAsUpIndicator(R.drawable.menu);
+//        }
+
+        //toolbar右边的三条线的动画
+        ActionBarDrawerToggle toggle = new ActionBarDrawerToggle(
+                this, mDrawerLayout, mToolbar, R.string.navigation_drawer_open, R.string.navigation_drawer_close);
+        mDrawerLayout.addDrawerListener(toggle);
+        //设置左上角显示三道横线
+        toggle.syncState();
+
         initFruits();
         GridLayoutManager layoutManager=new GridLayoutManager(this,2);
         mFruitAdapter=new FruitAdapter(fruitList);
