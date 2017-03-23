@@ -59,7 +59,7 @@ public class NetManager {
         //配置log打印拦截器
         HttpLoggingInterceptor loggingInterceptor = new HttpLoggingInterceptor();
         loggingInterceptor.setLevel(HttpLoggingInterceptor.Level.BODY);
-        builder.addInterceptor(loggingInterceptor);
+//        builder.addInterceptor(loggingInterceptor);
         return builder.build();
     }
 }

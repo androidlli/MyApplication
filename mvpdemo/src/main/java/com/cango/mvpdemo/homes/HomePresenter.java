@@ -6,6 +6,7 @@ import com.cango.mvpdemo.model.HttpResult;
 import com.cango.mvpdemo.net.NetManager;
 import com.cango.mvpdemo.net.RxSubscriber;
 import com.cango.mvpdemo.util.CommUtil;
+import com.orhanobut.logger.Logger;
 
 import java.util.List;
 
@@ -37,6 +38,7 @@ public class HomePresenter implements HomeContract.Presenter {
 
     @Override
     public void loadDatas(boolean showLoadingUi,int pageSize,int pageCount) {
+        Logger.d("pageCount = "+pageCount);
         loadDatas(true, showLoadingUi,pageSize,pageCount);
     }
 

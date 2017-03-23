@@ -177,6 +177,7 @@ public class HomeFragment extends Fragment implements HomeContract.View ,SwipeRe
     public void onRefresh() {
         isLoadMore=false;
         mPageCount=1;
+        mTempPageCount=2;
         mPresenter.loadDatas(true,PAGE_SIZE,mPageCount);
     }
 }
